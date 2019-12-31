@@ -16,8 +16,8 @@ UPF = 3
 
 if __name__ == '__main__':
 	# Train dataset & val dataset
-	# trset = DS.Trainset(train_path=DS.small_train_path)
-	trset = DS.Trainset(train_path="/dev/shm/small_train_bilinear/", UPF=UPF)
+	# trset = DS.Trainset(train_path=DS.train_path)
+	trset = DS.Trainset(train_path="/dev/shm/train/", UPF=UPF)
 	trloader = DS.DataLoader(trset, batch_size=8, shuffle=True, num_workers=4)
 	valset = DS.Testset(set_name='BSDS200', UPF=UPF)
 	valloader = DS.DataLoader(valset, batch_size=1)
