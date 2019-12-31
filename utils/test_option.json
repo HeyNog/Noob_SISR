@@ -1,0 +1,24 @@
+{
+"num_threads": 1, 
+
+"gpu_flag": true,
+
+ "Scale Factor": 4,
+
+"Testset": "Set14",
+
+"save_output": true,
+
+"save_origin": true,
+
+"num_loops": 10,
+
+"model_list": [
+"fastercat_align_batch8_scheduler_small2k_norm",
+"fsrcnn_batch8_scheduler_small2k_norm",
+"espcn_3l_batch8_scheduler_small2k_norm",
+"srcnn_batch8_scheduler_small2k_norm",
+"bicubic",
+"nearest"
+]
+}
